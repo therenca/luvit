@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:luvit/screens/shell.dart';
+import 'package:luvit/screens/shell/shell.dart';
 
 void main() {
   runApp(const Luvit());
