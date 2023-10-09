@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:luvit/conf.dart' as conf;
-import 'package:luvit/screens/shell/bottom_navbar.dart';
+
+import 'status_bar.dart';
+import 'bottom_navbar.dart';
 
 class Shell extends StatefulWidget {
 	const Shell({Key? key}) : super(key: key);
@@ -16,6 +18,8 @@ class ShellState extends State<Shell> {
 			color: Colors.black,
 			child: Column(
 				children: [
+					const StatusBar(),
+					
 					Expanded(
 						child: Container(
 							// color: Colors.white
