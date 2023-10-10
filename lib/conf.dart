@@ -10,6 +10,8 @@ class Assets {
 	static const String location = 'assets/images/ui/location.png';
 	static const String headerPin = 'assets/images/ui/header_pin.png';
 	static const String headerStar = 'assets/images/ui/header_star.png';
+	static const String darkStar = 'assets/images/ui/dark_star.png';
+	static const String love = 'assets/images/ui/love.png';
 }
 
 class Colors {

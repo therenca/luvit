@@ -4,12 +4,16 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:luvit/models/profile/data/d_profile.dart' as d_profile;
 
 import 'indicator.dart';
+import 'sections/first.dart';
+import 'sections/second.dart';
 
 class Card extends StatefulWidget {
+	final double? width;
 	final d_profile.Profile profile;
 	
 	const Card({
 		Key? key,
+		this.width,
 		required this.profile
 	}) : super(key: key); 
 
@@ -20,6 +24,10 @@ class Card extends StatefulWidget {
 class CardState extends State<Card> {
 	int selectedIndex = 0;
 	Map<String, int> indexes = {};
+	Map<int, Widget> sections = {
+		0: const First(),
+		1: const Second()
+	};
 	PageController controller = PageController();
 	@override
 	void initState(){
@@ -125,11 +133,19 @@ class CardState extends State<Card> {
 							color: Colors.transparent,
 						),
 						onTap: (){
-							if(selectedIndex < widget.profile.images.length){
+							if(selectedIndex < (widget.profile.images.length - 1)){
 								++selectedIndex;
 								controller.jumpToPage(selectedIndex);
 							}
 						},
+					),
+				),
+				Positioned(
+					bottom: 10,
+					child: Container(
+						width: widget.width,
+						padding: const EdgeInsets.symmetric(horizontal: 20.0),
+						child: sections[selectedIndex] ?? Container(),
 					),
 				),
 			],

@@ -72,7 +72,9 @@ flutter:
     - assets/images/ui/profile.png
     - assets/images/ui/header_pin.png
     - assets/images/ui/header_star.png
+    - assets/images/ui/dark_star.png
     - assets/images/ui/notify.png
+    - assets/images/ui/love.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

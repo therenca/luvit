@@ -44,9 +44,9 @@ class ShellState extends State<Shell> {
 
 	@override
 	Widget build(BuildContext context){
-		return Material(
-			color: Colors.black,
-			child: Column(
+		return Scaffold(
+			backgroundColor: Colors.black,
+			body: Column(
 				children: [
 					const StatusBar(),
 					const app_bar.AppBar(),
@@ -75,6 +75,7 @@ class ShellState extends State<Shell> {
 																width: width - 20,
 																child: card.Card(
 																	profile: p,
+																	width: width - 20,
 																),
 															);
 															return Positioned(
