@@ -3,6 +3,7 @@ import 'package:luvit/conf.dart' as conf;
 
 import 'status_bar.dart';
 import 'bottom_navbar.dart';
+import 'app_bar.dart' as app_bar;
 
 class Shell extends StatefulWidget {
 	const Shell({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class ShellState extends State<Shell> {
 			child: Column(
 				children: [
 					const StatusBar(),
-					
+					const app_bar.AppBar(),
 					Expanded(
 						child: Container(
 							// color: Colors.white

@@ -67,6 +67,9 @@ flutter:
     - assets/images/ui/location.png
     - assets/images/ui/chat.png
     - assets/images/ui/profile.png
+    - assets/images/ui/header_pin.png
+    - assets/images/ui/header_star.png
+    - assets/images/ui/notify.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
