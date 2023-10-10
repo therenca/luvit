@@ -13,5 +13,7 @@ class Assets {
 }
 
 class Colors {
+	static Color pink = const Color.fromRGBO(255, 50, 136, 1);
 	static Color headerStar = const Color.fromRGBO(33, 33, 33, 1);
+	static Color imageBorderColor = const Color.fromRGBO(44, 47, 49, 1);
 }

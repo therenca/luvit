@@ -15,4 +15,9 @@ class Profiles extends ChangeNotifier {
 		_profiles?.update(value.name, (v) => value);
 		notifyListeners();
 	}
+
+	void remove(String name){
+		_profiles?.remove(name);
+		notifyListeners();
+	}
 }

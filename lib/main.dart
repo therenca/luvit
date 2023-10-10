@@ -7,10 +7,9 @@ import 'package:luvit/models/profile/m_profiles.dart' as m_profile;
 
 Future<void> main() async {
 	WidgetsFlutterBinding.ensureInitialized();
-	var firebase = await Firebase.initializeApp(
+	await Firebase.initializeApp(
 		options: DefaultFirebaseOptions.currentPlatform
 	);
-	print('initialized firebase: ${firebase.name}');
   runApp(const Luvit());
 }
 
