@@ -33,8 +33,8 @@ class ShellState extends State<Shell> {
 					var val = value.map<String, dynamic>((k,v) => MapEntry(k as String, v as dynamic));
 					var profile = d_profile.Profile.fromMap(val);
 					profiles[profile.name] = profile;
-					Provider.of<m_profile.Profiles>(context, listen: false).profiles = profiles;
 				});
+				Provider.of<m_profile.Profiles>(context, listen: false).profiles = profiles;
 			} else {
 				var profile = d_profile.Profile.fromMap(data.values.first);
 				Provider.of<m_profile.Profiles>(context, listen: false).update(profile);
