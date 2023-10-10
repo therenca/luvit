@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Assets {
 	static const String home = 'assets/images/ui/home.png';
 	static const String star = 'assets/images/ui/star.png';
@@ -8,4 +10,8 @@ class Assets {
 	static const String location = 'assets/images/ui/location.png';
 	static const String headerPin = 'assets/images/ui/header_pin.png';
 	static const String headerStar = 'assets/images/ui/header_star.png';
+}
+
+class Colors {
+	static Color headerStar = const Color.fromRGBO(33, 33, 33, 1);
 }

@@ -21,8 +21,10 @@ class AppBar extends StatelessWidget {
 					),
 					const Spacer(),
 					Container(
-						decoration: const ShapeDecoration(
-							shape: StadiumBorder()
+						padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+						decoration: BoxDecoration(
+							border: Border.all(color: conf.Colors.headerStar),
+							borderRadius: BorderRadius.circular(20)
 						),
 						child: Row(
 							children: [
