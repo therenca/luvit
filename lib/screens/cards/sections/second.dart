@@ -11,24 +11,32 @@ class Second extends StatelessWidget {
 			color: Colors.transparent,
 			child: Column(
 				children: [
-					Container(
-						decoration: BoxDecoration(
-							color: Colors.black,
-							borderRadius: BorderRadius.circular(10.0)
-						),
-						child: Row(
-							children: [
-								Image.asset(conf.Assets.darkStar),
-								const SizedBox(width: 5.0,),
-								const Text(
-									'29,930',
-									style: TextStyle(
-										color: Colors.white,
-										fontWeight: FontWeight.bold
+					Row(
+						children: [
+							Expanded(
+								child: Container(
+									padding: const EdgeInsets.all(10.0),
+									decoration: BoxDecoration(
+										color: Colors.black,
+										borderRadius: BorderRadius.circular(20.0)
+									),
+									child: Row(
+										children: [
+											Image.asset(conf.Assets.darkStar),
+											const SizedBox(width: 5.0,),
+											const Text(
+												'29,930',
+												style: TextStyle(
+													color: Colors.white,
+													fontWeight: FontWeight.bold
+												),
+											),
+										],
 									),
 								),
-							],
-						),
+							),
+							const Spacer(flex: 2,),
+						],
 					),
 					const SizedBox(height: 3.0),
 					const Row(
